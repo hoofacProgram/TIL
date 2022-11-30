@@ -3,7 +3,7 @@
 
 ## Git
 * MarkDown
-	* [MarkDown](https://github.com/hoofacProgram/TIL/blob/main/Git/MarkDown)
+	* [MarkDown](https://github.com/hoofacProgram/TIL/blob/main/Git/MarkDown.md)
 
 ## HTML
 
