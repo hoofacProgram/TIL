@@ -9,11 +9,13 @@
 
 ## CSS
 
-## Javascript
+## JavaScript
 ### Jquery
 ### Ajax
 ### React
 ### Redux
+### Next.js
 
-## Nodejs
+### TypeScript
+## Node.js
 
