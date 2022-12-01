@@ -15,7 +15,7 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 - 태그 내부에는 속성값이 들어갈 수 있다. ex) \<tagName attributeName="value">
 - 속성값은 다중 적용 가능하다.
 
-## Display
+## Display Categories
 - CSS의 적용 등, content의 출력 방식을 바탕으로 분류가 가능하다.
 1. block
 	- 부모 요소의 전체 공간을 차지한다.
@@ -27,13 +27,6 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 	- 컨텐츠의 흐름에 따라, 태크에 할당된 공간만을 활용한다.
 	- 새로운 줄을 생성하지 않아도 어디서나 시작 가능하고, 필요에 의해서만 공간을 차지한다.
 	- inline 내부에는 inline만 중첩이 가능하다.
-	
-	
-## 형식?
-1. 서식 태그
-	- 화면에 보이는 구성, 서식에 관여하는 태그.
-2. 속성 태그
-	- 구성보다는 태그 속성의 사용성, 의미가 중요한 태그.
 	
 
 ## Comments
@@ -145,7 +138,7 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 ```
 
 ### \<q>\</q>
-- <q>짧은 인용문에 사용한다.</q>
+- <q>짧은 인용문에 사용.</q>
 
 ```
 - <q>짧은 인용문에 사용한다.</q>
@@ -155,8 +148,48 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 ### \<blockquote>\</blockquote>
 <blockquote>내용이 긴 인용문에 사용한다.</blockquote>
 
-```html
+```
 <blockquote>내용이 긴 인용문에 사용한다.</blockquote>
+```
+
+### \<ul>\</ul>
+<ul>
+	<li>순서가</li>
+	<li>없는</li>
+	<li>리스트</li>
+</ul>
+
+```
+<ul>
+	<li>순서가</li>
+	<li>없는</li>
+	<li>리스트</li>
+</ul>
+```
+
+
+### \<ol>\</ol>
+<ol>
+	<li>순서가</li>
+	<li>있는</li>
+	<li>리스트</li>
+</ol>
+
+```
+<ol>
+	<li>순서가</li>
+	<li>있는</li>
+	<li>리스트</li>
+</ol>
+```
+
+### \<a>\</a>
+- 링크를 건다.
+- href는 hypertext reference의 약자로 링크를 거는 타겟의 주소나 정보를 말한다.
+- <a href="https://www.naver.com">네이버로 이동</a>
+
+```
+- <a href="https://www.naver.com">네이버로 이동</a>
 ```
 
 
