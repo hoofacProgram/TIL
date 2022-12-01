@@ -34,7 +34,7 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 - \<!-- content --> 의 형식으로 사용한다.
 
 
-## Tags
+## Tags <span id="linkTest"></span>
 
 ### \<!DOCTYPE html>
 - DOCTYPE은 HTML이 지켜야할 규칙에 대한 연결부? 같은 역할을 했다.
@@ -154,7 +154,7 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 
 ### \<ul>\</ul>
 <ul>
-	<li>순서가</li>
+	<li >순서가</li>
 	<li>없는</li>
 	<li>리스트</li>
 </ul>
@@ -186,11 +186,30 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 ### \<a>\</a>
 - 링크를 건다.
 - href는 hypertext reference의 약자로 링크를 거는 타겟의 주소나 정보를 말한다.
-- <a href="https://www.naver.com">네이버로 이동</a>
+- <a href="https://www.naver.com" target="_self">네이버로 이동</a> : target="_self"(기본) 삭제 가능 : 현재창에서 링크 이동.
+- <a href="https://www.naver.com" target="_blank">네이버로 이동</a> : target="_blank" : 새창에서 링크 이동.
+- <a href="#linkTest">Tags 메뉴로 이동</a> : href에 #과 해당 태그의 id값을 넣으면 그곳에 링크 이동.
+
+```
+- <a href="https://www.naver.com">네이버로 이동</a> : target="_self"는 삭제 가능
 - <a href="https://www.naver.com" target="_blank">네이버로 이동</a>
+- <a href="https://www.naver.com" target="_blank">네이버로 이동</a> : target="_blank" : 새창에서 링크 이동.
+- <a href="#linkTest">Tags 메뉴로 이동</a> : href에 #과 해당 태그의 id값을 넣으면 그곳에 링크 이동.
+```
+
+
+### \<img src="" alt="">
+- 단일 태그.
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : src는 source의 약자로 불러올 이미지의 경로를 기입한다.
+- <img src="error" alt="HTML5 logo and wordmark.svg"> : alt는 이미지 호출에 실패했을 경우 나타날 문구다.
+- <img width="50" height="50" title="툴팁" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : width나 height 속성을 이용해서 크기 조정 가능, title 속성은 툴팁 기능을 활성화 한다.
 
 ```
-- <a href="https://www.naver.com">네이버로 이동</a>
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : src는 source의 약자로 불러올 이미지의 경로를 기입한다.
+- <img src="error" alt="HTML5 logo and wordmark.svg"> : alt는 이미지 호출에 실패했을 경우 나타날 문구다.
+- <img width="50" height="50" title="툴팁" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : width나 height 속성을 이용해서 크기 조정 가능, title 속성은 툴팁 기능을 활성화 한다.
 ```
 
 
+### \<video>\</video>
+- <video src="https://www.youtube.com/watch?v=OGFgdro160I&list=PLuHgQVnccGMDUzDDCKW-pCZQY-MMCX5yB"></video>
