@@ -187,6 +187,7 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 - 링크를 건다.
 - href는 hypertext reference의 약자로 링크를 거는 타겟의 주소나 정보를 말한다.
 - <a href="https://www.naver.com">네이버로 이동</a>
+- <a href="https://www.naver.com" target="_blank">네이버로 이동</a>
 
 ```
 - <a href="https://www.naver.com">네이버로 이동</a>
