@@ -1,5 +1,6 @@
 # HTML
 >출처 : [developer.mozilla.org](https://developer.mozilla.org/ko/docs/Web/HTML)
+
 https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/HTML_basics
 https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started
 
@@ -52,6 +53,15 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 
 ### \<body>\</body>
 - 
+
+
+### \<div>\</div> : block
+- 
+
+### \<span>\</span> : inline
+
+
+
 
 ### \<h1>\</h1> ~ \<h6>\</h6>
 - <h1>제목, 숫자가 작을수록 메인 제목에 가깝다.</h1>
@@ -202,14 +212,61 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 - 단일 태그.
 - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : src는 source의 약자로 불러올 이미지의 경로를 기입한다.
 - <img src="error" alt="HTML5 logo and wordmark.svg"> : alt는 이미지 호출에 실패했을 경우 나타날 문구다.
-- <img width="50" height="50" title="툴팁" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : width나 height 속성을 이용해서 크기 조정 가능, title 속성은 툴팁 기능을 활성화 한다.
+- <img width="50px" height="50px" title="툴팁" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : width나 height 속성을 이용해서 크기 조정 가능, title 속성은 툴팁 기능을 활성화 한다.
 
 ```
 - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : src는 source의 약자로 불러올 이미지의 경로를 기입한다.
 - <img src="error" alt="HTML5 logo and wordmark.svg"> : alt는 이미지 호출에 실패했을 경우 나타날 문구다.
-- <img width="50" height="50" title="툴팁" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : width나 height 속성을 이용해서 크기 조정 가능, title 속성은 툴팁 기능을 활성화 한다.
+- <img width="50px" height="50px" title="툴팁" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : width나 height 속성을 이용해서 크기 조정 가능, title 속성은 툴팁 기능을 활성화 한다.
 ```
 
 
-### \<video>\</video>
-- <video src="https://www.youtube.com/watch?v=OGFgdro160I&list=PLuHgQVnccGMDUzDDCKW-pCZQY-MMCX5yB"></video>
+### \<form>\</form>
+#### \<input />
+#### \<button>\</button>
+#### \<label>\</label>
+인풋 관련 정리 하자.
+- 사용자의 입력을 받고 입력 받은 데이터를 서버로 전송하는 용도.
+- <form>
+	  <input type="text" placeholder="입력 요구사항" />
+  </form>
+- 라디오, 체크박스 사용? 
+- 폼 테그에서 서버로 데이터를 보내는 방법?
+
+
+<br>
+
+## Tags : 의미론적 태그
+
+### <header></header>
+- 제목
+
+
+### <nav></nav>
+- 네비게이션
+
+
+### <section></section>
+
+
+### <main></main>
+
+
+### <footer></footer>
+- 하단
+
+### <article></article>
+- 본문
+
+
+
+## attribute
+정리 제대로 하자.
+### class
+- 선택자, 중복 가능, 한 태그 안에 다수개 사용 가능.
+
+### id
+- 선택자, 중복 불가, 한 태그 안에 하나만 가능.
+
+
+### lang
