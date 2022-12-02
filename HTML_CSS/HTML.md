@@ -1,9 +1,6 @@
 # HTML
 >출처 : [developer.mozilla.org](https://developer.mozilla.org/ko/docs/Web/HTML)
 
-https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/HTML_basics
-https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started
-
 
 - Hypertext Markup Language
 - 웹을 이루는 기초요소, 웹 컨텐츠의 구조를 정의(구조화)할 때 사용.
@@ -49,6 +46,8 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 ### \<head>\<head/>
 - 페이지에 포함되어 있는 모든 숨겨진 내용들을 담고 있는 컨테이너.
 - CSS, 문자 집합의 선언, 페이지에 대한 설명, 검색에 노출될 키워드 등... 페이지에 대한 모든 내용을 가진다.
+#### \<meta /> 
+- 단일태그
 
 
 ### \<body>\</body>
@@ -89,6 +88,7 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 ```
 
 ### \<br/>
+- 단일태그
 - 줄<br/>바꿈
 
 ```
@@ -147,11 +147,14 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 - 텍스트 중앙에 <del>취소선</del>을 표시.
 ```
 
+### \<mark>\</mark>
+
+
 ### \<q>\</q>
 - <q>짧은 인용문에 사용.</q>
 
 ```
-- <q>짧은 인용문에 사용한다.</q>
+- <q>짧은 인용문에 사용.</q>
 ```
 
 
@@ -161,6 +164,30 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 ```
 <blockquote>내용이 긴 인용문에 사용한다.</blockquote>
 ```
+
+
+### \<cite>\</cite>
+
+
+### \<abbr>\</abbr>
+- 준말 혹은 머릿글자 등을 표현하기 위해 사용.
+
+
+### \<code>\</code>
+- 컨텐츠 내부에 짧은 코드 내용을 삽입할 때 사용.
+
+
+### \<pre>\</pre>
+- 텍스트를 입력값 그대로 표현하기 위해 사용.
+
+
+### \<kdb>\</kdb>
+- 키보드 입력값을 표현할 때 사용.
+
+
+### \<hr>
+- 단일태그
+- 장면의 전환, 구획의 분리 등을 표시하기 위해 사용.
 
 ### \<ul>\</ul>
 <ul>
@@ -179,7 +206,7 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 
 
 ### \<ol>\</ol>
-<ol>
+<ol> type??
 	<li>순서가</li>
 	<li>있는</li>
 	<li>리스트</li>
@@ -192,6 +219,19 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 	<li>리스트</li>
 </ol>
 ```
+
+
+### \<dl>\</dl>
+#### \<dt>\</dt>
+#### \<dd>\</dd>
+
+
+### <table></table>
+#### <th></th>
+#### <td></td>
+#### <tr></tr>
+
+
 
 ### \<a>\</a>
 - 링크를 건다.
@@ -199,6 +239,7 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 - <a href="https://www.naver.com" target="_self">네이버로 이동</a> : target="_self"(기본) 삭제 가능 : 현재창에서 링크 이동.
 - <a href="https://www.naver.com" target="_blank">네이버로 이동</a> : target="_blank" : 새창에서 링크 이동.
 - <a href="#linkTest">Tags 메뉴로 이동</a> : href에 #과 해당 태그의 id값을 넣으면 그곳에 링크 이동.
+- 다운로드 기능?
 
 ```
 - <a href="https://www.naver.com">네이버로 이동</a> : target="_self"는 삭제 가능
@@ -209,16 +250,20 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 
 
 ### \<img src="" alt="">
-- 단일 태그.
+- 단일태그.
 - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : src는 source의 약자로 불러올 이미지의 경로를 기입한다.
-- <img src="error" alt="HTML5 logo and wordmark.svg"> : alt는 이미지 호출에 실패했을 경우 나타날 문구다.
+- <img src="error" alt="HTML5 logo and wordmark.svg"> : alt는 이미지에 대한 설명이다. 호출에 실패시 alt 문구만 출력된다.
 - <img width="50px" height="50px" title="툴팁" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : width나 height 속성을 이용해서 크기 조정 가능, title 속성은 툴팁 기능을 활성화 한다.
+- scrset???
 
 ```
 - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : src는 source의 약자로 불러올 이미지의 경로를 기입한다.
 - <img src="error" alt="HTML5 logo and wordmark.svg"> : alt는 이미지 호출에 실패했을 경우 나타날 문구다.
 - <img width="50px" height="50px" title="툴팁" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : width나 height 속성을 이용해서 크기 조정 가능, title 속성은 툴팁 기능을 활성화 한다.
 ```
+
+
+### \<iframe>\</iframe>
 
 
 ### \<form>\</form>
@@ -238,25 +283,37 @@ https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_st
 
 ## Tags : 의미론적 태그
 
-### <header></header>
+### \<header>\</header>
 - 제목
 
 
-### <nav></nav>
+### \<nav>\</nav>
 - 네비게이션
 
 
-### <section></section>
+### \<aside>\</aside>
 
 
-### <main></main>
+### \<section>\</section>
 
 
-### <footer></footer>
+### \<main>\</main>
+
+
+### \<footer>\</footer>
 - 하단
 
-### <article></article>
+### \<article>\</article>
 - 본문
+
+
+### \<thead>\</thead>
+
+
+### \<tbody>\</tbody>
+
+
+### \<tfoot>\</tfoot>
 
 
 
