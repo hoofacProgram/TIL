@@ -54,6 +54,12 @@
 - 
 
 
+### \<script>\</script> : inline
+
+
+### \<style>\</style>
+
+
 ### \<div>\</div> : block
 - 
 
@@ -62,7 +68,7 @@
 
 
 
-### \<h1>\</h1> ~ \<h6>\</h6>
+### \<h1>\</h1> ~ \<h6>\</h6> : block
 - <h1>제목, 숫자가 작을수록 메인 제목에 가깝다.</h1>
 - <h2>제목, 숫자가 작을수록 메인 제목에 가깝다.</h2>
 - <h3>제목, 숫자가 작을수록 메인 제목에 가깝다.</h3>
@@ -80,14 +86,14 @@
 ```
 
 
-### \<p>\</p>
+### \<p>\</p> : block
 - <p>문단</p><p>나누기</p>
 
 ```
 - <p>문단</p><p>나누기</p>
 ```
 
-### \<br/>
+### \<br/> : inline
 - 단일태그
 - 줄<br/>바꿈
 
@@ -96,7 +102,7 @@
 ```
 
 
-### \<b>\</b>
+### \<b>\</b> : inline
 - bold, 텍스트를 <b>굵게</b> 표시.
 - 중요 X, 일반 텍스트와 표시만 다를 뿐 <b>동일</b>하게 취급.
 
@@ -106,7 +112,7 @@
 ```
 
 
-### \<strong>\</strong>
+### \<strong>\</strong> : inline
 - 텍스트를 <strong>굵게</strong> 표시.
 - 일반 텍스트에 비해 해당 content의 <strong>중요함</strong>을 알리는 용도 포함.
 
@@ -115,7 +121,7 @@
 - 일반 텍스트에 비해 해당 content의 <strong>중요함</strong>을 알리는 용도 포함.
 ```
 
-### \<i>\</i>
+### \<i>\</i> : inline
 - italic, 텍스트를 <i>기울어지게</i> 표시.
 - 중요 X, 일반 텍스트와 표시만 다를 뿐 <i>동일</i>하게 취급.
 
@@ -125,7 +131,7 @@
 ```
 
 
-### \<em>\</em>
+### \<em>\</em> : inline
 - italic, 텍스트를 <em>기울어지게</em> 표시.
 - 일반 텍스트에 비해 해당 content의 <em>중요함</em>을 알리는 용도 포함.
 
@@ -134,23 +140,46 @@
 - 일반 텍스트에 비해 해당 content의 <em>중요함</em>을 알리는 용도 포함.
 ```
 
-### \<ins>\</ins>
+### \<ins>\</ins> : inline
 - <ins>밑줄</ins>을 표시.
 
 ```
 - <ins>밑줄</ins>을 표시.
 ```
-### \<del>\</del>
+
+
+### \<u>\</u> : inline
+- 밑줄, 하지만 CSS로 표현하는 걸 권장.
+
+
+
+### \<del>\</del> : inline
 - 텍스트 중앙에 <del>취소선</del>을 표시.
 
 ```
 - 텍스트 중앙에 <del>취소선</del>을 표시.
 ```
 
-### \<mark>\</mark>
+
+### \<s>\</s> : inline
 
 
-### \<q>\</q>
+
+### \<mark>\</mark> : inline
+
+
+
+### \<sup>\</sup> : inline
+- 위첨자
+
+
+### \<sub>\</sub> : inline
+- 아래첨자
+
+
+
+
+### \<q>\</q> : inline
 - <q>짧은 인용문에 사용.</q>
 
 ```
@@ -158,38 +187,60 @@
 ```
 
 
-### \<blockquote>\</blockquote>
-<blockquote>내용이 긴 인용문에 사용한다.</blockquote>
+### \<blockquote>\</blockquote> : block
+<blockquote>내용이 긴(블록) 인용구에 사용한다.</blockquote>
 
 ```
 <blockquote>내용이 긴 인용문에 사용한다.</blockquote>
 ```
 
 
-### \<cite>\</cite>
+### \<cite>\</cite> : inline
 
 
-### \<abbr>\</abbr>
+### \<small>\</small> : inline
+
+
+
+### \<abbr>\</abbr> : inline
 - 준말 혹은 머릿글자 등을 표현하기 위해 사용.
 
 
-### \<code>\</code>
+### \<code>\</code> : inline
 - 컨텐츠 내부에 짧은 코드 내용을 삽입할 때 사용.
 
 
-### \<pre>\</pre>
+### \<pre>\</pre> : block
 - 텍스트를 입력값 그대로 표현하기 위해 사용.
 
 
-### \<kdb>\</kdb>
+### \<kbd>\</kbd> : inline
 - 키보드 입력값을 표현할 때 사용.
 
 
-### \<hr>
+### \<var>\</var> : inline
+- 변수명 표현.
+
+
+### \<data>\</data> : inline
+
+
+### \<time>\</time> : inline
+
+
+### \<progress>\</progress> : inline
+
+
+
+### \<meter>\</meter> : inline
+
+
+### \<hr> : block
 - 단일태그
 - 장면의 전환, 구획의 분리 등을 표시하기 위해 사용.
 
-### \<ul>\</ul>
+### \<ul>\</ul> : block
+#### \<li>\</li> : block
 <ul>
 	<li >순서가</li>
 	<li>없는</li>
@@ -205,7 +256,8 @@
 ```
 
 
-### \<ol>\</ol>
+### \<ol>\</ol> : block
+#### \<li>\</li> : block
 <ol> type??
 	<li>순서가</li>
 	<li>있는</li>
@@ -221,19 +273,19 @@
 ```
 
 
-### \<dl>\</dl>
-#### \<dt>\</dt>
-#### \<dd>\</dd>
+### \<dl>\</dl> : block
+#### \<dt>\</dt> : block
+#### \<dd>\</dd> : block
 
 
-### <table></table>
+### <table></table> : block
 #### <th></th>
 #### <td></td>
 #### <tr></tr>
 
 
 
-### \<a>\</a>
+### \<a>\</a> : inline
 - 링크를 건다.
 - href는 hypertext reference의 약자로 링크를 거는 타겟의 주소나 정보를 말한다.
 - <a href="https://www.naver.com" target="_self">네이버로 이동</a> : target="_self"(기본) 삭제 가능 : 현재창에서 링크 이동.
@@ -249,7 +301,7 @@
 ```
 
 
-### \<img src="" alt="">
+### \<img src="" alt=""> : inline
 - 단일태그.
 - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/100px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark.svg"> : src는 source의 약자로 불러올 이미지의 경로를 기입한다.
 - <img src="error" alt="HTML5 logo and wordmark.svg"> : alt는 이미지에 대한 설명이다. 호출에 실패시 alt 문구만 출력된다.
@@ -263,13 +315,32 @@
 ```
 
 
-### \<iframe>\</iframe>
+### \<video>\</video> : inline
 
 
-### \<form>\</form>
-#### \<input />
-#### \<button>\</button>
-#### \<label>\</label>
+
+### \<audio>\</audio> : inline
+
+
+
+### \<iframe>\</iframe> : inline
+
+
+
+### \<canvas>\</canvas> : inline
+
+
+
+### \<template>\</template> : inline
+
+
+
+### \<form>\</form> : block
+#### \<input /> : inline
+#### \<textarea>\</textarea> : inline
+#### \<output>\</output> : inline
+#### \<button>\</button> : inline
+#### \<label>\</label> : inline
 인풋 관련 정리 하자.
 - 사용자의 입력을 받고 입력 받은 데이터를 서버로 전송하는 용도.
 - <form>
@@ -279,32 +350,47 @@
 - 폼 테그에서 서버로 데이터를 보내는 방법?
 
 
+
+### \<dialog>\</dialog> : block
+
+
+
+### \<select>\</select> : inline
+- 콤보박스? select list?
+
+
+### \<datalist>\</datalist> : inline
+- 콤보박스? selecte list?
+
+
 <br>
 
 ## Tags : 의미론적 태그
 
-### \<header>\</header>
+### \<header>\</header> : block
 - 제목
 
 
-### \<nav>\</nav>
+### \<nav>\</nav> : block
 - 네비게이션
 
 
-### \<aside>\</aside>
+### \<aside>\</aside> : block
 
 
-### \<section>\</section>
+### \<section>\</section> : block
 
 
-### \<main>\</main>
+### \<main>\</main> : block
 
 
-### \<footer>\</footer>
+### \<footer>\</footer> : block
 - 하단
 
-### \<article>\</article>
+### \<article>\</article> : block
 - 본문
+
+### \<details>\</details> : block
 
 
 ### \<thead>\</thead>

@@ -13,10 +13,9 @@
 ## JavaScript
 ### Jquery
 ### Ajax
-### React
-### Redux
-### Next.js
-### TypeScript
 
 ## Node.js
-
+### TypeScript
+### Next.js
+### React
+### Redux
