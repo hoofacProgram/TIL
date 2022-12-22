@@ -1,26 +1,25 @@
 # JavaScript
->출처 : [youtube/코딩앙마/자바스크립트 기초 강좌](https://www.youtube.com/playlist?list=PLZKTXPmaJk8JDicsOyY2cTcwXmBa-ZceI)
+> 출처 : [developer.mozilla.org](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 
 
 ## 변수 / 상수
-- 변수명 선언 규칙.
-	- 변수명에는 문자, 숫자, $, _ 만 사용 가능.
-	- 첫글자는 숫자가 올 수 없음.
-	- 기본 예약어는 사용 불가능.
-	- 가급적으로 상수는 대문자를 이용하여 상수임을 확인.
-	- 읽기 쉽고 이해할 수 있는 표현식 사용.
-- let(변수), const(상수)를 사용해서 선언.
-	- var를 사용하거나 생략 가능하지만 중복 선언 등의 문제로 추천하지 않음.
+> 변수명 선언 규칙.
+>	- 변수명에는 문자, 숫자, $, _ 만 사용 가능.
+>	- 첫 글자는 숫자가 올 수 없음.
+>	- 기본 예약어는 사용 불가능.
+>	- 상수에는 대문자로만 사용하여 상수임을 확인 시켜주는 것을 권장한다.
+>	- 읽기 쉽고 이해하기 쉬운 표현식 사용을 권장한다.
+>
+> 변수는 let, 상수는 const 를 사용해서 선언한다.
+>	- var를 사용하거나 생략 가능하지만 중복 선언 등의 문제로 추천하지 않는다.
 
 ```javascript
-const NAME = "hoofac";
-let age = 38 
+const NAME = "hoofac";	// 상수
+let age = 38			// 변수
 ```
 
-
 ## 자료형
-
-### Primitive
+### 기본자료형
 - String
 	- "String" (쌍따옴표), 'String' (홑따옴표), \`String` (백틱)
 	
@@ -53,7 +52,7 @@ let age = 38
 	```
 
 - undefined
-	- 값이 할당되지 않았을 경우.
+> 값이 할당되지 않았을 경우 나타난다.
 	
 	```javascript
 	let age;
@@ -64,11 +63,11 @@ let age = 38
 
 
 ### Reference
-- object
+> object
 
 
 ### typeof 연산자
-- 변수의 자료형을 확인할 때 사용.
+> 변수의 자료형을 확인할 때 사용한다.
 
 
 ## 메시지창
@@ -94,3 +93,34 @@ let age = 38
 ## 객체
 
 ## 배열
+
+## Location
+> URL 주소를 가져온다.
+
+- Location.href
+	- 온전한 URL을 가져온다.
+
+	```
+	Location.href
+	```
+
+- Location.origin
+	- 메인 URL 주소를 가져온다.
+
+	```
+	Location.origin
+	```
+
+- Location.pathname
+	- 메인 주소 뒤('/') 이후의 경로 주소를 가져온다.
+
+	```
+	Location.pathname
+	```
+
+- Location.search
+	- URL '?' 이후의 쿼리스트링을 가져온다.
+
+	```
+	Location.search
+	```
