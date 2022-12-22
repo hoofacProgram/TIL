@@ -19,6 +19,7 @@ let age = 38			// 변수
 
 ## 자료형
 ### 기본자료형
+	메모리를 직접 할당받아 사용한다.
 - String
 	- "String" (쌍따옴표), 'String' (홑따옴표), \`String` (백틱)
 	
@@ -62,7 +63,8 @@ let age = 38			// 변수
 
 
 ### Reference
-> object
+	임의의 메모리에 값을 넣고, 그 주소값을 할당받아 사용한다.
+- object
 
 
 ### typeof 연산자
