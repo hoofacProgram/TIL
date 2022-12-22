@@ -1,7 +1,7 @@
 # TIL (Today I Learned)
-- Commit Message Rule
-	- create(update, delete) html_css/html(path)
-	- write text in detail
+	Commit Message Rule
+	- create(update, delete) readme(name)
+		- write text in detail
 	- English : lower case / Korean : default
 	
 ## HTML / CSS

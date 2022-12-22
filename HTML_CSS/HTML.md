@@ -403,7 +403,7 @@
 
 
 
-## attribute
+## Attribute
 정리 제대로 하자.
 ### class
 - 선택자, 중복 가능, 한 태그 안에 다수개 사용 가능.
@@ -411,5 +411,24 @@
 ### id
 - 선택자, 중복 불가, 한 태그 안에 하나만 가능.
 
+### type
+
+### style
+
+### maxlength
+
+### scope
+
+### colspan
+
+### rowspan
+
+### data-
+	사용자 정의 속성처럼 사용할 수 있다.
+	'data-' 뒤로 어떤 속성이든 붙여서 사용할 수 있다.
 
 ### lang
+
+## Event
+
+### oninput
