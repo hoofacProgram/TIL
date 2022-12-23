@@ -9,12 +9,15 @@
 	- 기본 예약어는 사용 불가능.
 	- 상수에는 대문자로만 사용하여 상수임을 확인 시켜주는 것을 권장한다.
 	- 읽기 쉽고 이해하기 쉬운 표현식 사용을 권장한다.
-	변수는 let, 상수는 const 를 사용해서 선언한다.
+	- 변수는 let, 상수는 const 를 사용해서 선언한다.
+	- const를 default로 사용하고, 필요시 let를 사용한다.
 	- var를 사용하거나 생략 가능하지만 중복 선언 등의 문제로 추천하지 않는다.
+	- const [] = [] 와 같은 방식으로 다중 선언이 가능하다.
 
 ```javascript
-const NAME = "hoofac";	// 상수
+const NAME = 'hoofac'	// 상수
 let age = 38			// 변수
+const [NAME, AGE] = ['hoofac', 38]
 ```
 
 ## 자료형
@@ -52,7 +55,8 @@ let age = 38			// 변수
 	```
 
 - undefined
-> 값이 할당되지 않았을 경우 나타난다.
+
+	값이 할당되지 않았을 경우 나타난다.
 	
 	```javascript
 	let age;
@@ -60,6 +64,8 @@ let age = 38			// 변수
 	```
 
 - symbol
+
+
 
 
 ### Reference
@@ -90,38 +96,57 @@ let age = 38			// 변수
 ## 함수
 ### 함수 표현식
 ### 화살표 함수
+### IIFE(즉시 실행 함수 표현)
+```javascript
+()()
+```
+
+
 
 ## 객체
 
 ## 배열
+	const(상수) 선언해서 사용
+```
+const array = []
+```
+
 
 ## Location
 > URL 주소를 가져온다.
 
-- Location.href
-	- 온전한 URL을 가져온다.
+### Location.href
+	온전한 URL을 가져온다.
+```
+Location.href
+```
 
-	```
-	Location.href
-	```
+### Location.origin
+	메인 URL 주소를 가져온다.
 
-- Location.origin
-	- 메인 URL 주소를 가져온다.
+```
+Location.origin
+```
 
-	```
-	Location.origin
-	```
+### Location.pathname
+	메인 주소 뒤('/') 이후의 경로 주소를 가져온다.
 
-- Location.pathname
-	- 메인 주소 뒤('/') 이후의 경로 주소를 가져온다.
+```
+Location.pathname
+```
 
-	```
-	Location.pathname
-	```
+### Location.search
+	URL '?' 이후의 쿼리스트링을 가져온다.
 
-- Location.search
-	- URL '?' 이후의 쿼리스트링을 가져온다.
+```
+Location.search
+```
 
-	```
-	Location.search
-	```
+## 동기, 비동기
+### Promise
+#### then
+```javascript
+.then()
+```
+### Async / Await
+
