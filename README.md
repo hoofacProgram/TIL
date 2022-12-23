@@ -1,6 +1,6 @@
 # TIL (Today I Learned)
 	Commit Message Rule
-	- create(update, delete) readme(name)
+	- create(update, delete) readme(file name)
 		- write text in detail
 	- English : lower case / Korean : default
 	
