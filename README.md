@@ -27,6 +27,7 @@
 
 ## Dataase
 - [MySQL](https://github.com/hoofacProgram/TIL/blob/main/Dataase/MySQL.md)
+- [lowdb](https://github.com/hoofacProgram/TIL/blob/main/Dataase/lowdb.md)
 
 ## Cloud
 - [AWS](https://github.com/hoofacProgram/TIL/blob/main/Cloud/AWS.md)
@@ -48,6 +49,8 @@
 - [algorithm](https://github.com/hoofacProgram/TIL/blob/main/Theory/algorithm.md)
 - [Data Structure](https://github.com/hoofacProgram/TIL/blob/main/Theory/Data%20Structure.md)
 - [Design Pattern](https://github.com/hoofacProgram/TIL/blob/main/Theory/Design%20Pattern.md)
+- [Programming Paradigm](https://github.com/hoofacProgram/TIL/blob/main/Theory/Programming%Paradigm.md)
+- [Immutability](https://github.com/hoofacProgram/TIL/blob/main/Theory/Immutability.md)
 - [Restful API](https://github.com/hoofacProgram/TIL/blob/main/Theory/Restful%20API.md)
 - [TDD](https://github.com/hoofacProgram/TIL/blob/main/Theory/TDD.md)
 - [SEO](https://github.com/hoofacProgram/TIL/blob/main/Theory/SEO.md)

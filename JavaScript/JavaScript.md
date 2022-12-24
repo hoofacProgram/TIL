@@ -1,5 +1,5 @@
 # JavaScript
-> 출처 : [developer.mozilla.org](https://developer.mozilla.org/ko/docs/Web/JavaScript)
+> [developer.mozilla.org](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 
 
 ## 변수 / 상수
@@ -21,7 +21,8 @@ const [NAME, AGE] = ['hoofac', 38]
 ```
 
 ## 자료형
-### 기본자료형
+### primitive : 기본자료형
+	데이터 불변성.
 	메모리를 직접 할당받아 사용한다.
 - String
 	- "String" (쌍따옴표), 'String' (홑따옴표), \`String` (백틱)
@@ -46,7 +47,7 @@ const [NAME, AGE] = ['hoofac', 38]
 	- true(참), false(거짓)
 	- 논리 연산 등에서 주로 사용.
 	
-- null
+- Null
 	- 존재하지 않는 값.
 	
 	```javascript
@@ -54,7 +55,7 @@ const [NAME, AGE] = ['hoofac', 38]
 	null
 	```
 
-- undefined
+- Undefined
 
 	값이 할당되지 않았을 경우 나타난다.
 	
@@ -63,15 +64,43 @@ const [NAME, AGE] = ['hoofac', 38]
 	undefined
 	```
 
-- symbol
+- Symbol
 
 
 
 
-### Reference
+### Reference : 참조자료형 : 객체
+	데이터 가변성.
+	모든 참조자료형은 그 자체로 객체다.
 	임의의 메모리에 값을 넣고, 그 주소값을 할당받아 사용한다.
-- object
+- Object
+	- Object.assign({}, 변수명1, 변수명2)
+		- 첫번째 {} 인자에 두번째 이후의 인자 내용들을 합쳐서 넣어준다.
+		- 변수 인자를 하나만 넣으면 복사처럼 사용된다.
+	```javascript
+	function setName(man) {
+		// Object.assign으로 인해 lim의 데이터는 kim의 데이터와 개별적으로 구분되었다.
+		man = Object.assign({}, man)
+		man.name = 'lim'
+		return man
+	}
 
+	- Object.freeze(변수명)
+		- 변수를 수정할 수 없는 상태로 만들어준다.
+		- 함수를 실행하면 풀 수 있는 방법이 존재하지 않는다.
+		- 수정이 필요할 시, 복제를 통해 새로운 변수로 만들어 사용한다.
+		- Nested object의 경우에는 변경이 가능하다.
+	const kimN = {name: 'kim'}
+	const limN = setName(kimN)
+	```
+- Array
+	- array.concat()
+	- [] 복사시, .concat()을 해줌으로 중복 nested object 현상으로 인한 값 공유 현상을 해결할 수 있다.
+	```javascript
+	// concat 사용하는 예제 만들어서 넣어놓자!
+	```
+- Function
+- etc.
 
 ### typeof 연산자
 > 변수의 자료형을 확인할 때 사용한다.
@@ -85,6 +114,8 @@ const [NAME, AGE] = ['hoofac', 38]
 
 ## 비교 연산자
 
+Null 병합 할당자??
+
 ## 조건문
 
 ## 논리 연산자
@@ -97,20 +128,49 @@ const [NAME, AGE] = ['hoofac', 38]
 ### 함수 표현식
 ### 화살표 함수
 ### IIFE(즉시 실행 함수 표현)
+- ()() : 소괄호 두개
+- 첫번째 () 괄호 안에 실행할 함수 등을 입력한다.
+- 두번째 () 괄호는 비워둔다.
 ```javascript
-()()
+(function () {
+	
+})()
 ```
 
 
 
 ## 객체
 
-## 배열
+## Array
 	const(상수) 선언해서 사용
 ```
 const array = []
 ```
+- array.push()
+	- array가 가진 데이터에 직접적으로 접근해서 추가 데이터를 입력한다.
+	```javascript
+	```
+- array.concat()
+	- array가 가진 데이터를 복사하거나, 복사한 데이터에 추가 데이터를 입력할 경우 사용한다.
+	- object 복사시, .concat()을 해줌으로 중복 nested object 현상으로 인한 값 공유 현상을 해결할 수 있다.
+	- push()에 비해 성능이 떨어지므로, 필요시에만 사용을 권장한다.
+	```javascript
+	예제필요
+	```
+## 동기, 비동기
+### Promise
+#### then
+```javascript
+.then()
+```
+### Async / Await
 
+
+## Console
+- console.log()
+```javascript
+console.log('출력하고 싶은 내용')
+```
 
 ## Location
 > URL 주소를 가져온다.
@@ -141,12 +201,3 @@ Location.pathname
 ```
 Location.search
 ```
-
-## 동기, 비동기
-### Promise
-#### then
-```javascript
-.then()
-```
-### Async / Await
-
