@@ -5,11 +5,13 @@
 - Ctrl + P : search file. : command
 - Ctrl + shift + P : 기능 검색/실행 Command 열기. : command + > : F1
 - Ctrl + G : search line number. : command + :
+- Ctrl + B : Left Side Bar ON/OFF
 - Ctrl + shift + E : Open Explorer
 - Ctrl + shift + F : Open Search
 - Ctrl + shift + G : Open Git
 - Ctrl + shift + D : Open Debug
 - Ctrl + shift + X : Open Expansion
+- Ctrl + , : Setting
 - Ctrl + ` : Terminal ON/OFF
 
 ### Typing
@@ -40,8 +42,11 @@
 
 ### Git
 - GitLens
-- Git History : 
-- Git Graph
+- Git History : git log 확인.
+  - Alt + H : 해당 파일의 history
+  - 전체 확인은 command 이용.
+- Git Graph : git log 확인.
+  - StatusBar의 Git Graph 버튼 이용.
 
 ## Issue
 - 확장자 인식 문제 : Syntax Highlight나 Intellisense에 문제가 생길 수 있다.
@@ -50,4 +55,3 @@
 # Visual Studio
 ## HotKey
 ### Command
-- 
