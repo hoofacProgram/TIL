@@ -5,9 +5,9 @@
 - $()
 - lt() : 작은것
 - gt() : 큰것
-- .eq() : 같은 것
-- .css() : style 속성 설정
-
+- eq() : 같은 것
+- css() : style 속성 설정
+- find() : 선택자의 하위 요소 중 해당 요소를 찾는다.
 
 - val()
 - prop()
@@ -28,4 +28,24 @@ $(function () {
 $(document).ready(function () {
   // 1.8 버전 이후에는 사용되지 않는다.
 })
+```
+
+### $(window).resize()
+    윈도우의 크기가 바뀔 때 실행된다.
+
+
+### text()
+- 요소의 텍스트를 가져오거나 변경할 때 사용한다.
+```javascript
+$('h1').text()  // 텍스트를 가져온다.
+$('h1').text('텍스트')  // 텍스트를 입력한다.
+```
+
+### data()
+- 태그에 속성을 추가한다.
+```javascript
+$('h1').data('foo', 20)
+// <h1 data-foo="20"></h1>
+$('h1').data('foo', {age:20, name:'Lee'})
+// <h1 data-foo='{"age":"20", "name":"Lee"}'></h1>
 ```

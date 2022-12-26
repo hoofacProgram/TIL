@@ -162,7 +162,8 @@ console.log(x)	// '앞의 값이 false면 뒤의 값이 입력된다.'
 })()
 ```
 
-
+## 선택자
+- document.querySelector() : 요소, 클래스, ID 등을 선택한다.
 
 ## 객체
 

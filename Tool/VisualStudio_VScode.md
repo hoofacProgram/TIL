@@ -21,6 +21,10 @@
 - Ctrl + Y : Redo
 
 ## Expansion
+### Offline install
+- [VSCode Extensions](https://marketplace.visualstudio.com/vscode)에서 필요한 Extensions 다운로드.
+- 기능 검색/실행 Command 열기 > install from VSIX > 다운로드 파일 선택.
+
 ### Explorer
 - vscode-icons : Explorer 출력되는 파일 앞에 해당 확장자에 맞는 아이콘 표시.
 - Project Manager : 프로젝트 스위칭, 관리.
@@ -31,6 +35,7 @@
 - Color Highlight : 색상 코드에 해당 색상으로 하이라이트 표시.
 - Path Intellisense : 파일 경로 인텔리전스.
 - Diff : 두 문서의 내용 비교.
+- Auto Rename Tag : html Tag 양쪽 동시에 수정.
 
 ### Command
 - Output Colorizer : OUTPUT 창의 로그들에 구문 강조 기능.
