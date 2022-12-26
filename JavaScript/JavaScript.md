@@ -46,6 +46,17 @@ const [NAME, AGE] = ['hoofac', 38]
 - Boolean
 	- true(참), false(거짓)
 	- 논리 연산 등에서 주로 사용.
+	- false를 가지는 경우의 수.
+	```javascript
+	// 기본형
+	undefined
+	null
+	NaN
+	0(-0)
+	''	// 빈 문자열은 false, 빈 배열([])과 빈 객체({})는 true
+	false
+	NaN === NaN	// null === null, undefined === undefined는 true
+	```
 	
 - Null
 	- 존재하지 않는 값.
@@ -116,9 +127,23 @@ const [NAME, AGE] = ['hoofac', 38]
 
 Null 병합 할당자??
 
-## 조건문
-
 ## 논리 연산자
+- || : or
+	- 앞과 뒤의 값 중 하나라도 true라면 true다.
+	- 앞의 값이 true면 뒤에 값은 확인하지 않는다.
+```javascript
+// 함수 사용
+if (false || true) {
+	return true
+}
+// 변수 사용
+let f = false
+let t = '앞의 값이 false면 뒤의 값이 입력된다.'
+const X = f || t
+console.log(x)	// '앞의 값이 false면 뒤의 값이 입력된다.'
+```
+
+## 조건문
 
 ## 반복문
 
