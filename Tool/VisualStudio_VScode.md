@@ -1,19 +1,26 @@
 # VSCode
 ## HotKey
 ### Command
-- 명령어 확인 : command + ?
-- ctrl + p : search file. : command
-- ctrl + shift + p : 기능 검색/실행 Command 열기. : command + > : F1
-- ctrl + g : search line number. : command + :
-- ctrl + ` : TERMINAL ON/OFF
+- 도움말 : command + ?
+- Ctrl + P : search file. : command
+- Ctrl + shift + P : 기능 검색/실행 Command 열기. : command + > : F1
+- Ctrl + G : search line number. : command + :
+- Ctrl + shift + E : Open Explorer
+- Ctrl + shift + F : Open Search
+- Ctrl + shift + G : Open Git
+- Ctrl + shift + D : Open Debug
+- Ctrl + shift + X : Open Expansion
+- Ctrl + ` : Terminal ON/OFF
 
 ### Typing
-- ctrl + k + c : 주석 묶기.
-- ctrl + k + u : 주석 풀기.
+- Ctrl + k + c : 주석 묶기.
+- Ctrl + k + u : 주석 풀기.
+- Ctrl + Z : Undo
+- Ctrl + Y : Redo
 
 ## Expansion
-### EXPLORER
-- vscode-icons : EXPLORER에 출력되는 파일 앞에 해당 확장자에 맞는 아이콘 표시.
+### Explorer
+- vscode-icons : Explorer 출력되는 파일 앞에 해당 확장자에 맞는 아이콘 표시.
 - Project Manager : 프로젝트 스위칭, 관리.
 
 ### Typing
@@ -36,5 +43,11 @@
 - Git History : 
 - Git Graph
 
+## Issue
+- 확장자 인식 문제 : Syntax Highlight나 Intellisense에 문제가 생길 수 있다.
+  - Manage > Settings > File Associations > Add Item >  Item(현재), Value(목표)
 
 # Visual Studio
+## HotKey
+### Command
+- 
