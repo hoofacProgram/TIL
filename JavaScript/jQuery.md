@@ -49,3 +49,16 @@ $('h1').data('foo', 20)
 $('h1').data('foo', {age:20, name:'Lee'})
 // <h1 data-foo='{"age":"20", "name":"Lee"}'></h1>
 ```
+
+### trigger()
+
+
+### select 요소에 option 추가 하는방법?
+
+### change()
+- 요소에 change 이벤트 추가
+```javascript
+$('#nm').change(() => {
+  // 실행할 내용
+})
+```

@@ -30,7 +30,7 @@
 - Project Manager : 프로젝트 스위칭, 관리.
 
 ### Typing
-- TabOut : [], {}, (), '', "", ;, <>, 등등... 블록 끝단에서 Tab으로 탈출 가능.
+- TabOut : [], {}, (), '', "", ;, <>, 등등... 블록 끝단에서 Tab으로 탈출 가능. / 자동완성에 문제 있을 수 있음.
 - Todo Tree : TODO, FIXME 등... 해당 태그의 주석을 검색해서 Todo List 관리.
 - Color Highlight : 색상 코드에 해당 색상으로 하이라이트 표시.
 - Path Intellisense : 파일 경로 인텔리전스.

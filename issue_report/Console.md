@@ -16,3 +16,11 @@ Uncaught TypeError: Cannot read properties of undefined (reading '속성명')
 ```
 - 속성을 읽을 수 없는 상황이다.
 - 할당(=)을 이상한 기호(:, .) 등으로 잘못 입력했거나 속성의 대상, 혹은 대상에 속성이 존재하지 않을때 나타날 수 있다.
+
+## Uncaught TypeError: [{(intermediate value)}] is not a function
+- 즉시실행함수의 실행에 문제 발생.
+- 윗줄의 무언가와 내용이 합쳐지며 발생.
+- 해결 : 윗줄에 ; 넣어주면 Clear
+
+## Uncaught TypeError: Assignment to constant variable
+- const(상수) 선언되어 있는 변수에 값을 변경하려할 때 나타난다.
