@@ -5,6 +5,8 @@
 - Ctrl + P : search file. : command
 - Ctrl + shift + P : 기능 검색/실행 Command 열기. : command + > : F1
 - Ctrl + G : search line number. : command + :
+
+### SideBar
 - Ctrl + B : Left Side Bar ON/OFF
 - Ctrl + shift + E : Open Explorer
 - Ctrl + shift + F : Open Search
@@ -12,6 +14,8 @@
 - Ctrl + shift + D : Open Debug
 - Ctrl + shift + X : Open Expansion
 - Ctrl + , : Setting
+
+### FootBar
 - Ctrl + ` : Terminal ON/OFF
 
 ### Typing

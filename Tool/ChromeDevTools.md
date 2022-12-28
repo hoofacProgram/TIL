@@ -1,4 +1,12 @@
 # ChromeDevTools
+## Console
+
+## Sources
+
+## Network
+### Preview
+- SpGetData : 내가 상대에 보내는 데이터 확인.
+- SpSetData : 상대에게 내가 받는 데이터 확인.
 
 
 ## [Redux DevTools](https://github.com/reduxjs/redux-devtools)

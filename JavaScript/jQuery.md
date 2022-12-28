@@ -41,8 +41,15 @@ $('h1').text()  // 텍스트를 가져온다.
 $('h1').text('텍스트')  // 텍스트를 입력한다.
 ```
 
-### data()
+### attr()
 - 태그에 속성을 추가한다.
+```javascript
+$('h1').attr('disabled', true)
+// <h1 disabled = "true"></h1>
+```
+
+### data()
+- 태그에 data-(사용자 정의) 속성을 추가한다.
 ```javascript
 $('h1').data('foo', 20)
 // <h1 data-foo="20"></h1>
@@ -62,3 +69,7 @@ $('#nm').change(() => {
   // 실행할 내용
 })
 ```
+
+## Attribute
+### disabled
+- 비활성화

@@ -12,3 +12,9 @@ cellTemplate: function(cellElement, cellInfo) { cellElement.text(cellInfo.row.ro
 // 0번 행의 'nm' 컬럼의 내용을 가져온다.
 $('#main-grd').dxDataGrid("instance").cellValue(0, 'nm')
 ```
+
+## Button
+- 버튼 속성 설정에 사용한다.
+```javascript
+$('.save-btn').dxButton({ disabled: true })
+```
