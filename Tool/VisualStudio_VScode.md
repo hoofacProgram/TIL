@@ -40,6 +40,9 @@
 - Path Intellisense : 파일 경로 인텔리전스.
 - Diff : 두 문서의 내용 비교.
 - Auto Rename Tag : html Tag 양쪽 동시에 수정.
+- prettier : 
+  - Format On Save
+  - Default Formatter
 
 ### Command
 - Output Colorizer : OUTPUT 창의 로그들에 구문 강조 기능.
