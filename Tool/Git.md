@@ -1,11 +1,18 @@
 # Git
 > [Book](https://git-scm.com/book/ko/v2)
 ## Setting
-- userName, userEmail
+### userName, userEmail
 ```
 $ git config --global user.name "hoofacProgram"
 $ git config --global user.email "hoofac.program@gmail.com"
 ```
+
+### ignore
+- .gitignore 파일에 모듈이나 기타 버전 관리에서 제외할 폴더, 파일 등을 입력한다.
+    - .gitignore 자체가 git에 커밋되므로 프로젝트 해당인원 전원에게 해당될 경우만 사용한다.
+- .git/info/exclude는 git 업로드 되지 않으므로 개인적인 제외 파일은 여기서 관리한다.
+    - ex) .prettierrc
+
 
 ## Log
 - log 확인
