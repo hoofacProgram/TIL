@@ -12,6 +12,13 @@ $ git config --global user.email "hoofac.program@gmail.com"
     - .gitignore 자체가 git에 커밋되므로 프로젝트 해당인원 전원에게 해당될 경우만 사용한다.
 - .git/info/exclude는 git 업로드 되지 않으므로 개인적인 제외 파일은 여기서 관리한다.
     - ex) .prettierrc
+```
+# 샆(#) 으로 주석을 작성한다.
+# 폴더 경로
+/node_modules
+# 파일 경로
+.prettierrc
+```
 
 
 ## Log

@@ -41,10 +41,35 @@
 - Diff : 두 문서의 내용 비교.
 - Auto Rename Tag : html Tag 양쪽 동시에 수정.
 - prettier : 
+  - ctrl + k + f : 선택한 구역 안에서 수동 정렬 실시.
   - setting
     - Format On Save : 저장과 동시에 포맷 정렬.
     - Default Formatter : 기본 정렬 기준... prettier으로 변경 해야 prettier 기준으로 포맷 변경 실시.
-  - ctrl + k + f : 선택한 구역 안에서 수동 정렬 실시.
+    - Require Config : root에 설정 파일이 존재하는 경우에만 Prettier가 적용된다.
+    - 해당 확장자(파일)에서 적용이 안되는 경우.
+      - F1 => Format Document With...
+        => Configure Default Formatter...
+        => Prettier - Code formatter
+  ```
+  {
+  // 줄당 코드량 기준
+  "printWidth": 80,
+  // 홑 따옴표
+  "singleQuote": true,
+  // 세미콜론
+  "semi": true,
+  // 탭 띄우기 크기
+  "tabWidth": 2,
+  // 배열 등의 끝에 쉼표 붙는 기준
+  "trailingComma": "es5",
+  // [], {} 안에 띄어쓰기
+  "bracketSpacing": true,
+  // [], {}, <> 등의 마지막 기호의 위치
+  "bracketSameLine": true,
+  // 애로우 함수의 인자를 감싸는 () 삭제 유무
+  "arrowParens": "avoid"
+  }
+  ```
 - Error Lens : error 실시간 표시.
 
 ### Command
