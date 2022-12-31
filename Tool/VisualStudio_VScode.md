@@ -40,7 +40,7 @@
 - Path Intellisense : 파일 경로 인텔리전스.
 - Diff : 두 문서의 내용 비교.
 - Auto Rename Tag : html Tag 양쪽 동시에 수정.
-- prettier : 
+- prettier : 문서 양식을 정해진 규칙에 따라 정리한다.
   - ctrl + k + f : 선택한 구역 안에서 수동 정렬 실시.
   - setting
     - Format On Save : 저장과 동시에 포맷 정렬.
@@ -71,6 +71,8 @@
   }
   ```
 - Error Lens : error 실시간 표시.
+- Tailwind CSS IntelliSense : TailwindCSS 클래스 인텔리전스.
+  - 정상 작동이 안될 경우, HTML CSS Support를 추가 설치.
 
 ### Command
 - Output Colorizer : OUTPUT 창의 로그들에 구문 강조 기능.
