@@ -1,4 +1,8 @@
 # VSCode
+## Setup
+- snippet : 명령 단축키 설정
+  - Preferences > Configure User Snippets
+  - global : 전역 / folder : 해당 폴더 하위 적용
 ## HotKey
 ### Command
 - 도움말 : command + ?
@@ -50,6 +54,7 @@
       - F1 => Format Document With...
         => Configure Default Formatter...
         => Prettier - Code formatter
+  - .prettierrc(설정 파일)
   ```
   {
   // 줄당 코드량 기준
