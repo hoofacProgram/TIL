@@ -81,7 +81,12 @@ $('h1').data('foo', {age:20, name:'Lee'})
 ### trigger()
 
 
-
+### onclick()
+- click 이벤트 추가
+- 함수식으로 넣으면 안에 파라미터 전달도 가능
+```javascript
+$('#home').on('click', () => { 함수명(파라미터)} );
+```
 
 ### change()
 - 요소에 change 이벤트 추가

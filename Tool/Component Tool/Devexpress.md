@@ -7,6 +7,18 @@
 cellTemplate: function(cellElement, cellInfo) { cellElement.text(cellInfo.row.rowIndex) } }
 ```
 
+- 컬럼에 링크 태그 추가.
+```
+{ dataField: 'doc_no', caption: '문서번호', width: '12%', alignment: 'center', allowEditing: false,
+    cellTemplate: function (container, options) {
+      $('<a>' + options.text + '</a>')
+      .attr('href' , doc_url + options.value)
+      .attr('target', '_blank')
+      .appendTo(container);
+    }
+  }
+```
+
 - 특정 행의 셀값을 가져올 때 사용한다.
 ```javascript
 // 0번 행의 'nm' 컬럼의 내용을 가져온다.
