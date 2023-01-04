@@ -25,6 +25,15 @@ cellTemplate: function(cellElement, cellInfo) { cellElement.text(cellInfo.row.ro
 $('#main-grd').dxDataGrid("instance").cellValue(0, 'nm')
 ```
 
+### option
+- onInitNewRow : 내용 추가 row가 생성될때.
+  - 생성된 row 삭제
+  ```
+  e.component.refresh(true).done(() => {
+    e.component.cancelEditData();
+  });
+  ```
+
 ### allowEditing: false
 - 특정 셀을 readOnly로 만든다.
 ```javascript
