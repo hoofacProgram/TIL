@@ -88,6 +88,7 @@ const [NAME, AGE] = ['hoofac', 38]
 	- Object.assign({}, 변수명1, 변수명2)
 		- 첫번째 {} 인자에 두번째 이후의 인자 내용들을 합쳐서 넣어준다.
 		- 변수 인자를 하나만 넣으면 복사처럼 사용된다.
+		- {}는 [] 등, 다른 형태도 가능하다.
 	```javascript
 	function setName(man) {
 		// Object.assign으로 인해 lim의 데이터는 kim의 데이터와 개별적으로 구분되었다.
@@ -106,10 +107,15 @@ const [NAME, AGE] = ['hoofac', 38]
 	```
 - Array
 	- array.concat()
-	- [] 복사시, .concat()을 해줌으로 중복 nested object 현상으로 인한 값 공유 현상을 해결할 수 있다.
-	```javascript
-	// concat 사용하는 예제 만들어서 넣어놓자!
-	```
+		- [] 복사시, .concat()을 해줌으로 중복 nested object 현상으로 인한 값 공유 현상을 해결할 수 있다. : 쉽게 말하면 깊은 복사 가능.
+		```javascript
+		const array1 = ['a', 'b', 'c'];
+		const array2 = ['d', 'e', 'f'];
+		const array3 = array1.concat(array2);
+		console.log(array3);
+		// expected output: Array ["a", "b", "c", "d", "e", "f"]
+		```
+	- 
 - Function
 - etc.
 

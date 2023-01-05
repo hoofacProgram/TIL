@@ -96,3 +96,8 @@ $('#nm').change(() => {
 })
 ```
 
+
+- fadeIn
+- fadeOut
+- fadeTo
+

@@ -25,7 +25,13 @@ cellTemplate: function(cellElement, cellInfo) { cellElement.text(cellInfo.row.ro
 $('#main-grd').dxDataGrid("instance").cellValue(0, 'nm')
 ```
 
-### option
+- grid의 checkBox의 선택을 취소시킨다.
+```
+const selectRow = e.component.getSelectedRowKeys();
+e.component.deselectRows(selectRow);
+```
+
+### Option
 - onInitNewRow : 내용 추가 row가 생성될때.
   - 생성된 row 삭제
   ```
@@ -34,6 +40,13 @@ $('#main-grd').dxDataGrid("instance").cellValue(0, 'nm')
   });
   ```
 
+- onContentReady : grid가 완전히 그려지고 난 이후.
+
+- onCellClick : grid 내부의 cell을 클릭했을 때.
+
+- onSaving : grid 추가 row의 내용이 저장될 때.
+
+### Attribute
 ### allowEditing: false
 - 특정 셀을 readOnly로 만든다.
 ```javascript
