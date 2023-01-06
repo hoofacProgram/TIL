@@ -26,17 +26,27 @@ const [NAME, AGE] = ['hoofac', 38]
 	메모리를 직접 할당받아 사용한다.
 - String
 	- "String" (쌍따옴표), 'String' (홑따옴표), \`String` (백틱)
-	
 	```javascript
 	const NAME_SINGLE = 'hoohac'
 	const NAME_DOUBLE = "hoofac"
 	const NAME_BACKTICK = `my name is ${NAME_DOUBLE}`
 	```
-
 	- 따옴표는 사용성에 차이 없음.
 	- 따옴표 출력이 필요할 때는 \ 를 사용하여 표현 가능.
 	- 백틱은 ${}를 이용하여 문자열 내부에 변수 표현 가능.
 	
+	- replace() : 첫번째 인자를 두번째 인자로 변경한다. (최초 1회)
+	```javascript
+	const str = "Hello World"
+	str.replace('l','~')
+	// 'He~lo World'
+	```
+	- replaceAll() : replace를 전역 실행한다. (범위 전체)
+	```javascript
+	const str = "Hello World"
+	str.replaceAll('l','~')
+	// 'He~~o Wor~d'
+	```
 - Number
 	- 정수, 실수 등, 숫자 모두 사용 가능.
 	- 사칙연산(+, -, *, /, %) 가능.
