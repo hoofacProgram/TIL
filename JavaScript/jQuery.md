@@ -1,5 +1,5 @@
 # jQuery
->출처 : [jquery API](https://api.jquery.com)
+>[jquery API](https://api.jquery.com)
 
 ## Selector
 - $()

@@ -95,6 +95,36 @@ const [NAME, AGE] = ['hoofac', 38]
 	모든 참조자료형은 그 자체로 객체다.
 	임의의 메모리에 값을 넣고, 그 주소값을 할당받아 사용한다.
 - Object
+	- Object.keys() : 객체의 key만 배열로 반환한다.
+	```javascript
+	let user = {
+  	name: "John",
+  	age: 30
+	};
+	Object.keys(user)
+	// ['name', 'age']
+	```
+	
+	- Object.values() : 객체의 value만 배열로 반환한다.
+	```javascript
+	let user = {
+  	name: "John",
+  	age: 30
+	};
+	Object.values(user)
+	// ['John', 30]
+
+	```
+
+	- Object.entries() : 객체의 요소를 하나씩 배열에 담고, 그 배열들을 배열로 감싸서 반환한다.
+	```javascript
+	let user = {
+  	name: "John",
+  	age: 30
+	};
+	Object.entries(user)
+	//[['name', 'John'], ['age', 30]]
+	```
 	- Object.assign({}, 변수명1, 변수명2)
 		- 첫번째 {} 인자에 두번째 이후의 인자 내용들을 합쳐서 넣어준다.
 		- 변수 인자를 하나만 넣으면 복사처럼 사용된다.
@@ -106,12 +136,14 @@ const [NAME, AGE] = ['hoofac', 38]
 		man.name = 'lim'
 		return man
 	}
+	```
 
 	- Object.freeze(변수명)
 		- 변수를 수정할 수 없는 상태로 만들어준다.
 		- 함수를 실행하면 풀 수 있는 방법이 존재하지 않는다.
 		- 수정이 필요할 시, 복제를 통해 새로운 변수로 만들어 사용한다.
 		- Nested object의 경우에는 변경이 가능하다.
+	```javascript
 	const kimN = {name: 'kim'}
 	const limN = setName(kimN)
 	```
