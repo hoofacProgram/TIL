@@ -9,6 +9,7 @@
 - $('[attr]') : attribute
 - $('#parent > div') : id가 parent인 요소의 div 속성을 가진 자식 / 구분자 : >
 - $('#parent div') : id가 parent인 요소의 div 속성을 가진 후손 / 구분자 : 공백
+  - $('#yy').children('div') : id가 yy인 요소의 div 속성을 가진 후손
 
 ```javascript
 $('#id')
@@ -17,6 +18,7 @@ $('tag')
 $('[attr]')
 $('#parent > div')
 $('#parent div')
+$('#s_yy').children('div')
 ```
 
 ## Attribute

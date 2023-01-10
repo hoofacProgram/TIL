@@ -47,6 +47,27 @@ const [NAME, AGE] = ['hoofac', 38]
 	str.replaceAll('l','~')
 	// 'He~~o Wor~d'
 	```
+	- padStart() : 문자열 시작부에 지정 문자를 추가하여 자릿수를 맞춘다.
+		- ES7 지원
+		- ES7 이전 버전에서는 함수형으로 기능을 만들어서 사용해야 한다.
+	```javascript
+	const nStr = '12'
+	nStr.padStart(7, 0)
+	// '0000012'
+
+	// ES7 이전
+	// 문자열(str) 앞에 지정 자릿수(maxLength)만큼 문자(filStr)를 추가한다.
+	  function padStart(str, maxLength, fillStr){
+    return str.length >= maxLength ? str : new Array(maxLength - str.length + 1).join(`${fillStr}`) + str;
+  }
+	```
+	- padEnd() : 문자열 시작부에 지정 문자를 추가하여 자릿수를 맞춘다.
+		- ES7 지원
+	```javascript
+	const nStr = '33'
+	nStr.padEnd(7, 0)
+	// '3300000'
+	```
 - Number
 	- 정수, 실수 등, 숫자 모두 사용 가능.
 	- 사칙연산(+, -, *, /, %) 가능.

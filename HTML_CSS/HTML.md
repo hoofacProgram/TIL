@@ -376,13 +376,14 @@
 
 
 ### \<aside>\</aside> : block
-
+- 내용과 내용 사이를 구분하는 용도
 
 ### \<section>\</section> : block
+- 독립적인 구획 정리를 위해 사용.
 
 
 ### \<main>\</main> : block
-
+- body의 핵심 구획을 표시한다
 
 ### \<footer>\</footer> : block
 - 하단

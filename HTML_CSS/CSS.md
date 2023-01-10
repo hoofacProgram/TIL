@@ -21,5 +21,12 @@
 }
 ```
 
+- white-space : 줄바꿈
+```css
+div {
+  white-space: pre-line;
+}
+```
+
 padding 순서(시계방향?)
 - top right bottom left
