@@ -2,22 +2,6 @@
 >[Devexpress](https://www.devexpress.com)
 
 ## DataGrid
-- grid의 instance 정보를 사용할 수 있다.
-```javascript
-const gridData = $('#grid').dxDataGrid('instance');
-```
-
-- grid의 선택한 row의 정보를 사용할 수 있다.
-```javascript
-const selectedRowData = $('#grid').dxDataGrid('instance').getSelectedRowsData();
-```
-
-- grid의 dataSource를 가져온다.
-```javascript
-const dataSource = $('#grid').dxDataGrid('instance').option('dataSource');
-const firstRow = dataSource[0]; // 인덱스 '0' row data
-```
-
 - 해당 화면의 column 순번 입력할 때 사용한다.
 ```javascript
 cellTemplate: function(cellElement, cellInfo) { cellElement.text(cellInfo.row.rowIndex) }
@@ -33,6 +17,22 @@ cellTemplate: function(cellElement, cellInfo) { cellElement.text(cellInfo.row.ro
       .appendTo(container);
     }
   }
+```
+
+- grid의 instance 정보를 사용할 수 있다.
+```javascript
+const gridData = $('#grid').dxDataGrid('instance');
+```
+
+- grid의 선택한 row의 정보를 사용할 수 있다.
+```javascript
+const selectedRowData = $('#grid').dxDataGrid('instance').getSelectedRowsData();
+```
+
+- grid의 dataSource를 가져온다.
+```javascript
+const dataSource = $('#grid').dxDataGrid('instance').option('dataSource');
+const firstRow = dataSource[0]; // 인덱스 '0' row data
 ```
 
 - 특정 행의 셀값을 가져올 때 사용한다.
