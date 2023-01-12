@@ -4,6 +4,20 @@
   - Preferences > Configure User Snippets
   - global : 전역 / folder : 해당 폴더 하위 적용
 
+- extension 관리
+  - 관리 대상 extension의 해당 identifier를 확인한다.
+  - workspace > .vscode > extensions.json파일을 생성한다.
+  - "recommendation"이라는 배열 안에 확인한 identifier를 입력한다.
+  - vscode의 extension창에 RECOMMENDED 메뉴에서 해당 extension의 목록을 확인할 수 있다.
+  ```json
+  {
+    "recommendations": [
+        "pkief.material-icon-theme"
+        , "usernamehw.errorlens"
+    ]
+  }
+  ```
+
 ## HotKey
 ### Command
 - 도움말 : command + ?
@@ -26,8 +40,9 @@
 ### Typing
 - Ctrl + k + c : 주석 묶기.
 - Ctrl + k + u : 주석 풀기.
-- Ctrl + Z : Undo
-- Ctrl + Y : Redo
+- Ctrl + z : Undo
+- Ctrl + y : Redo
+- Ctrl + k + f : 선택한 구역의 양식을 정렬한다.
 
 ## Expansion
 ### Offline install
@@ -56,7 +71,7 @@
         => Configure Default Formatter...
         => Prettier - Code formatter
   - .prettierrc(설정 파일)
-  ```
+  ```json
   {
   // 줄당 코드량 기준
   "printWidth": 80,
