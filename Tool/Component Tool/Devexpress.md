@@ -2,6 +2,14 @@
 >[Devexpress](https://www.devexpress.com)
 
 ## DataGrid
+- 컬럼에 버튼 추가
+```javascript
+  , { name: 'openBtn', caption: 'I/F', type: 'buttons', width: '25%',
+      // text 대신 icon 사용 가능(혼용은 안됨)
+      buttons: [ { text: '[실행]', onClick: (e) => {
+        //함수 실행
+      } } ] }
+```
 - 해당 화면의 column 순번 입력할 때 사용한다.
 ```javascript
 cellTemplate: function(cellElement, cellInfo) { cellElement.text(cellInfo.row.rowIndex) }
@@ -17,6 +25,14 @@ cellTemplate: function(cellElement, cellInfo) { cellElement.text(cellInfo.row.ro
       .appendTo(container);
     }
   }
+```
+
+- 컬럼에 데이터 입력한다.
+```javascript
+// grid 내부
+setCellValue(rowData, value) { rowData.board_gb = value; },
+// grid 외부 : mainGrid에 Id 넣고 ColumnName 넣고, data 넣는다.
+mainGrid.dataGrid.cellValue(Id, 'ColumnName', 'data')
 ```
 
 - grid의 instance 정보를 사용할 수 있다.
