@@ -26,7 +26,7 @@
 - [Axios](https://github.com/hoofacProgram/TIL/blob/main/JavaScript/Asynchronous/Axios.md)
 
 ## Dataase
-- [MySQL](https://github.com/hoofacProgram/TIL/blob/main/Dataase/MySQL.md)
+- [MSSQL](https://github.com/hoofacProgram/TIL/blob/main/Dataase/MSSQL.md)
 - [lowdb](https://github.com/hoofacProgram/TIL/blob/main/Dataase/lowdb.md)
 
 ## Cloud
