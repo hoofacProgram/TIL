@@ -25,6 +25,10 @@
 - [Ajax](https://github.com/hoofacProgram/TIL/blob/main/JavaScript/Asynchronous/Ajax.md)
 - [Axios](https://github.com/hoofacProgram/TIL/blob/main/JavaScript/Asynchronous/Axios.md)
 
+## PYthon
+- [Python](https://github.com/hoofacProgram/TIL/blob/main/Python/Python.md)
+- [PyQt_PySide](https://github.com/hoofacProgram/TIL/blob/main/Python/PyQt_PySide.md)
+
 ## Dataase
 - [MSSQL](https://github.com/hoofacProgram/TIL/blob/main/Dataase/MSSQL.md)
 - [lowdb](https://github.com/hoofacProgram/TIL/blob/main/Dataase/lowdb.md)
