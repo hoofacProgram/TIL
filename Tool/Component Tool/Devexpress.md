@@ -12,7 +12,15 @@
 ```
 - 해당 화면의 column 순번 입력할 때 사용한다.
 ```javascript
+// 그리드 컬럼 자체 생성
 cellTemplate: function(cellElement, cellInfo) { cellElement.text(cellInfo.row.rowIndex) }
+```
+```javascript
+// 그리드 옵션에서 처리
+column : { dataField: 'seq', width: '5%', caption: '순번', alignment: 'center'}
+g.option.onCellPrepared = (e) => {
+    if (e.rowType === 'data' && e.columnIndex === 0) {e.data.seq = e.rowIndex + 1; e.cellElement.text(e.data.seq);}
+}
 ```
 
 - 컬럼에 링크 태그 추가.

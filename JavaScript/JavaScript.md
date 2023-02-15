@@ -178,7 +178,7 @@ const [NAME, AGE] = ['hoofac', 38]
 		console.log(array3);
 		// expected output: Array ["a", "b", "c", "d", "e", "f"]
 		```
-	- 
+	
 - Function
 - etc.
 
