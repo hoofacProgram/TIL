@@ -1,6 +1,14 @@
 lodash
 - 배열 등의 정렬이나 정리
 
+Moment.js
+- 시간 관련
+
+```javascript
+// 오늘 날짜 포멧에 맞춰서 입력
+moment().format('YYYY-MM-DD');
+```
+
 Luxon
 - 시간 관련
 
