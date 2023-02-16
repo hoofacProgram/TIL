@@ -7,27 +7,30 @@
 ```shell
 $ git init
 ```
+
+### userName, userEmail
+```shell
+# 해당 프로젝트
+$ git config user.name "github name"
+$ git config user.email "github id email"
+# 시스템 전체
+$ git config --global user.name "github name"
+$ git config --global user.email "github id email"
+```
+
 ### remote
 - github.com 같이 git 저장소를 활용할 경우 remote 설정이 필요하다.
 ```shell
 # remote 연결
-$ git remote add origin https://github.com/<본인 계정>/our-project
+$ git remote add origin git@github.com:{github name}/KIS_stock.git
 # 초기 파일들 업로드
 $ git push -u origin master
 ```
+
 ### clone
 - github.com 등의 저장소에서 프로젝트를 복사해 온다.
 ```shell
 $ git clone https://github.com/<유저이름>/<리포지토리 이름>.git
-```
-### userName, userEmail
-```shell
-# 해당 프로젝트
-$ git config user.name "hoofacProgram"
-$ git config user.email "hoofac.program@gmail.com"
-# 시스템 전체
-$ git config --global user.name "hoofacProgram"
-$ git config --global user.email "hoofac.program@gmail.com"
 ```
 
 ### ignore
@@ -41,6 +44,27 @@ $ git config --global user.email "hoofac.program@gmail.com"
 /node_modules
 # 파일 경로
 .prettierrc
+```
+
+### private repository
+- ssh와 ssh-keygen을 이용해서 접속 환경을 설정한다.
+- ssh-keygen 생성하고 .ssh > id_rsa.pub 내용 복사.
+- github 접속, 해당 ID의 settings > SSH and GPG keys > SSH keys의 New SSH key 누르고 id_rsa.pub 내용 입력해서 keys 생성.
+```shell
+# ssh-keyhen 생성
+$ ssh-keygen -t rsa -C "github id email"
+```
+
+- 이후에는 기본 셋팅 시작
+```shell
+$ git init
+$ git config user.name "github name"
+$ git config user.email "github id email"
+$ git remote add origin git@github.com:{github name}/KIS_stock.git
+$ git add .gitignore    # add용 파일은 미리 생성해놔야 한다.
+$ git commit -m 'create gitignore'
+$ git branch -M main
+$ git push -u origin main
 ```
 
 ## Log
