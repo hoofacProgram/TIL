@@ -111,6 +111,18 @@
 - Git Graph : git log 확인.
   - StatusBar의 Git Graph 버튼 이용.
 
+## Etc.
+- region : 코드를 하나의 블럭으로 묶고 싶을때 사용한다.
+  - 해당 블럭의 시작에 #region, 끝에 #endregion를 넣어준다.
+```javascript
+// #region
+`
+해당 블럭의 시작과 끝에 #region, #endregion을 주석 처리와 함께 입력한다.
+python의 경우는 # 자체가 주석 처리 효과를 가지므로 그냥 사용할 수 있다.
+`
+// #endregion
+```
+
 ## Issue
 - 확장자 인식 문제 : Syntax Highlight나 Intellisense에 문제가 생길 수 있다.
   - Manage > Settings > File Associations > Add Item >  Item(현재), Value(목표)
