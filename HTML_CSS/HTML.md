@@ -336,6 +336,7 @@
 
 
 ### \<form>\</form> : block
+- preventDefault() : submit 막을 때 or 고유 기능 막을 때 사용.
 #### \<input /> : inline
 #### \<textarea>\</textarea> : inline
 #### \<output>\</output> : inline
@@ -343,9 +344,11 @@
 #### \<label>\</label> : inline
 인풋 관련 정리 하자.
 - 사용자의 입력을 받고 입력 받은 데이터를 서버로 전송하는 용도.
-- <form>
-	  <input type="text" placeholder="입력 요구사항" />
-  </form>
+	```html
+	<form>
+		<input type="text" placeholder="입력 요구사항" />
+	</form>
+	```
 - 라디오, 체크박스 사용? 
 - 폼 테그에서 서버로 데이터를 보내는 방법?
 
