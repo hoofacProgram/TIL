@@ -14,3 +14,5 @@
 ## Zsh(Z Shell)
 - 하모니카 리눅스는 기본 터미널로 Z Shell을 사용한다.
 
+## program
+- gpick : 색상 추출

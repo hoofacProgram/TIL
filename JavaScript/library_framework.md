@@ -2,7 +2,7 @@ lodash
 - 배열 등의 정렬이나 정리
 
 Moment.js
-- 시간 관련
+- 날짜, 시간
 - 참고
   - https://jsikim1.tistory.com/195
 
